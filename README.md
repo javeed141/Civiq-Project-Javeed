@@ -95,7 +95,11 @@ npm run dev
 
   ### 🤝 Contributors
 - Puneeth.
+<<<<<<< HEAD
 - Javeed.
+=======
+- Zaweed.
+>>>>>>> 31d00fc (Initial commit)
 
   
 ---

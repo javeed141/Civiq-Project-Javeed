@@ -12,7 +12,10 @@
 /build
 
 # misc
+<<<<<<< HEAD
 .env
+=======
+>>>>>>> 31d00fc (Initial commit)
 .DS_Store
 .env.local
 .env.development.local
