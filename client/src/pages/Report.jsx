@@ -26,6 +26,7 @@ import {
 import toast from "react-hot-toast";
 
 import Navigation from "../components/Navigation";
+import Chatbot from "../components/Chatbot";
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from '../Context/ThemeContext'; // using ThemeContext
 
@@ -51,7 +52,7 @@ export default function ReportPage() {
     const token = localStorage.getItem("token") || sessionStorage.getItem("token");
     if (!token) {
       toast.error("Login required");
-      navigate("/login");
+      // navigate("/login");
       return;
     }
   }, [])
@@ -383,6 +384,7 @@ export default function ReportPage() {
           </div>
         </div>
       </div>
+      <Chatbot />
     </>
   );
 }

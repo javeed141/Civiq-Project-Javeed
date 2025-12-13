@@ -12,11 +12,14 @@ import DepartmentDashboard from "./pages/dashboard/Department/DepartmentDashboar
 import EmployeePage from "./pages/Employee/Employee";
 import HomePage from "./pages/HomePage"
 import NotFoundPage from "./pages/notfoundpage";
+import Chatbot from "./components/Chatbot";
 // import ThemeProvider
 function App() {
   return (
      <ThemeProvider>
        <Routes>
+                    <Route path="/chat" element={<Chatbot/>}/>
+
             <Route path="/" element={<HomePage/>}/>
               <Route path="/user-home" element={<CitizenDashboard />} />
         <Route path="/admin" element={<AdminDashboard />} />
